@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.vid-wrap {
+    width: 90%;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+video {
+    z-index: -2;
+    min-width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.overlay {
+    position: fixed;
+    background: linear-gradient(to right, #215F00, #E4E4D9);
+    min-width: 100vw;
+    min-height: 100vh;
+    top: 0;
+    right: 0;
+    opacity: 0.55;
+    z-index: -1;
+}
+
+.logo {
+    width: 14rem;
+}
+
+.container.counter {
+    color: white;
+    text-align: center;
+  }
+  
+  .counter li {
+    display: inline-block;
+    font-size: 1em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+  }
+  
+  .counter li span {
+    display: block;
+    font-size: 4.5rem;
+  }
+
+  .vid-wrap p {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 1.4rem;
+  }
+
+  ul {
+    display: flex;
+
+  }
+
+  .name {
+    width: 18rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: 0;
+  }
+
+  button {
+    width: 10rem;
+    padding: 0.3rem 1.2rem;
+    color: white;
+    background-color: black;
+    border-radius: 15px 0 15px 0;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+.soc {
+    color: white;
+}
+
+.copy {
+    font-size: 0.5rem;
+    width: 100%;
+    font-weight: bolder;
+}
+
+
+@media (max-width: 700px) {
+
+    * {
+        font-size: 11px;
+    }
+
+    
+
+    body {
+        background-image: url(img/beach.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .vid-wrap p{
+        color: white;
+        font-weight: bolder;
+    }
+
+    video {
+        display: none;
+    }
+
+    .copy p {
+        font-size: 11px;
+        color: white;
+
+    }
+}
